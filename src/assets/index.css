@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{ 
+    background: #883EC1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.todo{
+    text-align: center;
+}
+.form{
+    background-color: rgb(190, 207, 171);
+    width:400px; 
+    margin:0 auto;
+    margin-top: 36px;
+    align-items: center;
+    border-radius: 16px;
+    padding: 8px;
+  }
+  .input{
+    border-radius:24px;
+    border: none;
+    padding: 8px;
+  }
+  .form-field
+  {
+      margin-top:24px;
+      display:flex;
+      flex-direction:column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align:left;
+      gap:16px;
+  }
+  #app {
+      font-family: Montseratt, bold;
+      text-align: center;
+      color: #9ABDDE;
+      padding-top: 32px;
+  }
+  
+  .user-data {
+      margin-left: auto;
+      font-family: Montseratt;
+      margin-right: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      grid-row: 1/2;
+      border: 1px solid;
+      flex: 1 1 100px;
+      margin: 0 5px;
+      background: #463EC1;
+      box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+    }
+    
+    #nav {
+      position: fixed;
+      background: #201931;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999px;
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+    }
+    
+    #nav a {
+      display: inline;
+      padding: 16px;
+      font-weight: bold;
+      color: #86d658;
+    }
+    
+    #nav a:hover {
+      color: #040e44;
+      border-radius: 6px;
+      background-color: #c4fad2;
+    }
+    
+    #nav a.router-link-exact-active {
+      color: #2fd18b;
+    }
+    
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 0.75s ease;
+    }
+    .fade-enter,
+    .fade-leave-active {
+      opacity: 0;
+    }
+    .child-view {
+      position: absolute;
+      transition: all 0.75s cubic-bezier(0.55, 0, 0.1, 1);
+    }
+    .slide-left-enter,
+    .slide-right-leave-active {
+      opacity: 0;
+      -webkit-transform: translate(30px, 0);
+      transform: translate(30px, 0);
+    }
+    .slide-left-leave-active,
+    .slide-right-enter {
+      opacity: 0;
+      -webkit-transform: translate(-30px, 0);
+      transform: translate(-30px, 0);
+    }
+    
+  .todo{
+    text-align: center;
+  }
+  .wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .flexbox {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+   
+  }
+  .new {
+    font-family: Montseratt, sans-serif;
+  }
+  
+  
+  @media only screen and (max-width: 400px) {
+    .wrapper {
+      flex-direction: column;  
+    }
+  }
+  .submit-btn
+  {
+    font-family: Montseratt, bold;
+    padding: 8px 8px;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: rgb(182, 186, 202);
+    color: #fff;
+    border: none;
+  }
+  
+  .reset-btn {
+    font-family: Montseratt, bold;
+    background-color: rgb(202, 202, 202);
+    color: black;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 0;
+    margin: 10px;
+  }
+  .reset-btn:hover {
+    
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.2);
+    
+    background-color: #918787;
+    color: rgb(255, 253, 253);
+  }
+  
+  .container {
+    margin-top: 150px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .sbm-btn {
+    font-family: Montseratt, bold;
+    background-color: #089c55;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 0;
+    margin: 10px;
+  }
+  
+  .sbm-btn:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.2);
+        
+        background-color: #00C465;
+        color: rgb(255, 253, 253);
+  }
+  @keyframes slidebg {
+    to {
+      background-position: 20vw;
+    }
+  }
+  
+  .follow {
+    margin-top: 40px;
+  }
+  
+  .follow input {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: auto 150px; 
+  }
